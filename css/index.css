@@ -1,0 +1,42 @@
+*{
+    /* 初始化 取消页面的内外边距 */
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* 弹性布局 让页面元素水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 让页面始终占浏览器总高 */
+    height: 100vh;
+}
+
+ul{
+    width: 1190px;
+    /* 去除无序列表默认的小圆点 */
+    list-style: none;
+    /* 弹性布局 让元素均匀排列 */
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li{
+    /* 相对定位 */
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
